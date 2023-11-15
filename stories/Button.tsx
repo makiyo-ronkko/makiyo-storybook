@@ -1,52 +1,52 @@
-import React from 'react';
-import './button.css';
+import React, { useMemo } from 'react';
+import styles from './button.module.css';
+import { StyleWrapper } from './hoc/StyleWrapper';
+import { Color } from './types/index';
+import { Typography } from './Typography';
+import { classNames } from './utils/index';
+import { Loader } from './Loader';
 
-interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
+interface ButtonProps extends HTMLButtonElement {
+	isLoading?: boolean;
+	outlined?: boolean;
+	outlineColor?: Color;
+	children?: any;
 }
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
-  ...props
-}: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-  return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      {...props}
-    >
-      {label}
-      <style jsx>{`
-        button {
-          background-color: ${backgroundColor};
-        }
-      `}</style>
-    </button>
-  );
-};
+export const Button = StyleWrapper(
+	({
+		children,
+		className = '',
+		isLoading,
+		outlined = false,
+		outlineColor = 'primary',
+		...props
+	}: ButtonProps) => {
+		const outline = useMemo(() => {
+			const style: React.CSSProperties = {};
+			if (outlined) {
+				style.borderColor = `var(--color-${outlineColor})`;
+			}
+			return style;
+		}, [outlined, outlineColor]);
+
+		return (
+			<button
+				data-testid='button-component'
+				className={`${styles.button} ${classNames({
+					[styles.outline]: outlined,
+				})} ${className}`}
+				style={outline}
+				{...props}
+			>
+				<Typography
+					variant='subtitle'
+					type='span'
+					className={styles.textContainer}
+				>
+					{isLoading ? <Loader /> : children}
+				</Typography>
+			</button>
+		);
+	}
+);
