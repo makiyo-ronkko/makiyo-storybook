@@ -19,14 +19,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
 	args: {
-		backgroundColor: 'tomato',
+		backgroundColor: 'primary',
 		width: 'xl',
 		children: 'Submit',
 	},
 };
 
 export const WithShadow: Story = () => (
-	<Button backgroundColor='primary' width='lg' isShadow={true}>
+	<Button backgroundColor='tomato' width='lg' isShadow={true}>
 		Click me!
 	</Button>
 );
@@ -53,22 +53,20 @@ export const Loading: Story = () => (
 	/>
 );
 
-export const Secondary: Story = {
-	args: {
-		label: 'Button',
-	},
-};
-
 export const Large: Story = {
 	args: {
-		size: 'large',
+		backgroundColor: 'cloud',
+		width: 'lg',
 		label: 'Button',
+		children: 'Large',
 	},
 };
 
 export const Small: Story = {
 	args: {
-		size: 'small',
+		width: 'sm',
 		label: 'Button',
+		children: 'Small',
+		backgroundColor: 'nude',
 	},
 };
