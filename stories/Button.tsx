@@ -6,11 +6,12 @@ import { Typography } from './Typography';
 import { classNames } from './utils/index';
 import { Loader } from './Loader';
 
-interface ButtonProps extends HTMLButtonElement {
+export interface ButtonProps {
 	isLoading?: boolean;
 	outlined?: boolean;
 	outlineColor?: Color;
-	children?: any;
+	children: React.ReactNode;
+	className: React.CSSProperties;
 }
 
 export const Button = StyleWrapper(
