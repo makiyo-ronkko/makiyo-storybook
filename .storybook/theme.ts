@@ -7,8 +7,8 @@ export default create({
   colorSecondary: 'hsl(230, 100%, 85%)',
 
   // UI
-  appBg: 'white',
-  appContentBg: 'white',
+  appBg: 'hsl(0, 0%, 97%)',
+  appContentBg: 'hsl(0, 0%, 97%)',
   appBorderColor: 'grey',
   appBorderRadius: 4,
 
