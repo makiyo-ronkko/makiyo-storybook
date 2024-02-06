@@ -1,90 +1,90 @@
 .h1 {
-	font-size: var(--font-size-h1);
-	font-weight: var(--font-weight-lighter);
-	line-height: 1.167;
-	letter-spacing: -0.01562rem;
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-lighter);
+  line-height: 1.167;
+  letter-spacing: -0.01562rem;
 }
 
 .h2 {
-	font-size: var(--font-size-h2);
-	font-weight: var(--font-weight-lighter);
-	line-height: 1.2;
-	letter-spacing: -0.00833rem;
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-lighter);
+  line-height: 1.2;
+  letter-spacing: -0.00833rem;
 }
 
 .h3 {
-	font-size: var(--font-size-h3);
-	font-weight: var(--font-weight-normal);
-	line-height: 1.167;
-	letter-spacing: normal;
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.167;
+  letter-spacing: normal;
 }
 
 .h4 {
-	font-size: var(--font-size-h4);
-	font-weight: var(--font-weight-normal);
-	line-height: 1.235;
-	letter-spacing: 0.00735rem;
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.235;
+  letter-spacing: 0.00735rem;
 }
 
 .h5 {
-	font-size: var(--font-size-h5);
-	font-weight: var(--font-weight-normal);
-	line-height: 1.334;
-	letter-spacing: normal;
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.334;
+  letter-spacing: normal;
 }
 
 .h6 {
-	font-size: var(--font-size-h6);
-	font-weight: var(--font-weight-bolder);
-	line-height: 1.6;
-	letter-spacing: 0.0075rem;
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-bolder);
+  line-height: 1.6;
+  letter-spacing: 0.0075rem;
 }
 
 .subtitle {
-	font-size: var(--font-size-subtitle);
-	font-weight: var(--font-weight-normal);
-	line-height: 1.5;
-	letter-spacing: 0.00938rem;
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+  letter-spacing: 0.00938rem;
 }
 
 .body1 {
-	font-size: var(--font-size-body);
-	font-weight: var(--font-weight-normal);
-	line-height: 1.43;
-	letter-spacing: 0.01071rem;
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.43;
+  letter-spacing: 0.01071rem;
 }
 
 .body2 {
-	font-size: var(--font-size-button-text);
-	font-weight: var(--font-weight-normal);
-	line-height: 1.235;
-	letter-spacing: 0.01071rem;
+  font-size: var(--font-size-button-text);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.235;
+  letter-spacing: 0.01071rem;
 }
 
 .button-text {
-	font-size: var(--font-size-button-text);
-	font-weight: var(--font-weight-bolder);
-	line-height: 1.75;
-	letter-spacing: 0.02857rem;
+  font-size: var(--font-size-button-text);
+  font-weight: var(--font-weight-bolder);
+  line-height: 1.75;
+  letter-spacing: 0.02857rem;
 }
 
 .caption-text {
-	font-size: var(--font-caption-text);
-	font-weight: var(--font-weight-normal);
-	line-height: 1.66;
-	letter-spacing: 0.03333rem;
+  font-size: var(--font-caption-text);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.66;
+  letter-spacing: 0.03333rem;
 }
 
 .description-text {
-	font-size: var(--font-description-text);
-	font-weight: var(--font-weight-normal);
-	line-height: 1.235;
-	letter-spacing: 0.03333rem;
+  font-size: var(--font-description-text);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.235;
+  letter-spacing: 0.03333rem;
 }
 
 .overline-text {
-	font-size: var(--font-overline-text);
-	font-weight: var(--font-weight-normal);
-	line-height: 2.66;
-	letter-spacing: 0.08333rem;
+  font-size: var(--font-overline-text);
+  font-weight: var(--font-weight-normal);
+  line-height: 2.66;
+  letter-spacing: 0.08333rem;
 }

@@ -1,165 +1,165 @@
 :root {
-	--color-primary: hsl(212, 100%, 85%);
-	--color-primary-font: hsl(0, 0%, 50%);
+  --color-primary: hsl(212, 100%, 85%);
+  --color-primary-font: hsl(0, 0%, 50%);
 
-	--color-primary-dark: hsl(212, 92%, 65%);
-	--color-primary-dark-font: hsl(0, 0%, 100%);
+  --color-primary-dark: hsl(212, 92%, 65%);
+  --color-primary-dark-font: hsl(0, 0%, 100%);
 
-	--color-secondary: hsl(230, 100%, 85%);
-	--color-secondary-font: hsl(0, 0%, 100%);
+  --color-secondary: hsl(230, 100%, 85%);
+  --color-secondary-font: hsl(0, 0%, 100%);
 
-	--color-secondary-dark: hsl(230, 92%, 75%);
-	--color-secondary-dark-font: hsl(0, 0%, 100%);
+  --color-secondary-dark: hsl(230, 92%, 75%);
+  --color-secondary-dark-font: hsl(0, 0%, 100%);
 
-	--color-tomato: hsl(350, 88%, 74%);
-	--color-tomato-font: hsl(0, 0%, 100%);
+  --color-tomato: hsl(350, 88%, 74%);
+  --color-tomato-font: hsl(0, 0%, 100%);
 
-	--color-nude: hsl(350, 58%, 90%);
-	--color-nude-font: hsl(0, 0%, 50%);
+  --color-nude: hsl(350, 58%, 90%);
+  --color-nude-font: hsl(0, 0%, 50%);
 
-	--color-forest: hsl(168, 36%, 78%);
-	--color-forest-font: hsl(0, 0%, 50%);
+  --color-forest: hsl(168, 36%, 78%);
+  --color-forest-font: hsl(0, 0%, 50%);
 
-	--color-default: hsl(0, 0%, 97%);
-	--color-default-font: hsl(0, 0%, 50%);
+  --color-default: hsl(0, 0%, 97%);
+  --color-default-font: hsl(0, 0%, 50%);
 
-	--color-cloud: hsl(0, 0%, 47%);
-	--color-cloud-font: hsl(0, 0%, 100%);
+  --color-cloud: hsl(0, 0%, 47%);
+  --color-cloud-font: hsl(0, 0%, 100%);
 
-	--color-shadow: hsla(212, 20%, 49%, 0.5);
-	--color-transparent-dark: hsla(0, 0%, 0%, 0.25);
-	--color-transparent-dark-font: hsl(0, 0%, 50%);
+  --color-shadow: hsla(212, 20%, 49%, 0.5);
+  --color-transparent-dark: hsla(0, 0%, 0%, 0.25);
+  --color-transparent-dark-font: hsl(0, 0%, 50%);
 
-	--color-transparent: transparent;
-	--color-transparent-font: hsl(0, 0%, 50%);
+  --color-transparent: transparent;
+  --color-transparent-font: hsl(0, 0%, 50%);
 
-	--color-backdrop: hsla(0, 0%, 0%, 0.5);
+  --color-backdrop: hsla(0, 0%, 0%, 0.5);
 
-	--color-text-white: hsl(0, 0%, 100%);
-	--color-text-dark: hsl(0, 0%, 50%);
+  --color-text-white: hsl(0, 0%, 100%);
+  --color-text-dark: hsl(0, 0%, 50%);
 
-	--content-xxxl: 22rem;
-	--content-xxl: 20rem;
-	--content-xl: 18rem;
-	--content-lg: 16rem;
-	--content-md: 14rem;
-	--content-sm: 12rem;
-	--content-xs: 10rem;
-	--content-xxs: 8rem;
-	--content-xxxs: 6rem;
+  --content-xxxl: 22rem;
+  --content-xxl: 20rem;
+  --content-xl: 18rem;
+  --content-lg: 16rem;
+  --content-md: 14rem;
+  --content-sm: 12rem;
+  --content-xs: 10rem;
+  --content-xxs: 8rem;
+  --content-xxxs: 6rem;
 
-	--element-xl: 5rem;
-	--element-lg: 4.5rem;
-	--element-md: 4rem;
-	--element-sm: 3.5rem;
-	--element-xs: 3rem;
-	--element-xxs: 2.5rem;
-	--element-xxxs: 2rem;
-	--element-xxxxs: 1.5rem;
-	--element-root: 1rem;
+  --element-xl: 5rem;
+  --element-lg: 4.5rem;
+  --element-md: 4rem;
+  --element-sm: 3.5rem;
+  --element-xs: 3rem;
+  --element-xxs: 2.5rem;
+  --element-xxxs: 2rem;
+  --element-xxxxs: 1.5rem;
+  --element-root: 1rem;
 
-	--margin-xl: 2.5rem;
-	--margin-lg: 2rem;
-	--margin-md: 1.5rem;
-	--margin-sm: 1rem;
-	--margin-xs: 0.5rem;
-	--margin-xxs: 0.25rem;
+  --margin-xl: 2.5rem;
+  --margin-lg: 2rem;
+  --margin-md: 1.5rem;
+  --margin-sm: 1rem;
+  --margin-xs: 0.5rem;
+  --margin-xxs: 0.25rem;
 
-	--padding-xl: 2.5rem;
-	--padding-lg: 2rem;
-	--padding-md: 1.5rem;
-	--padding-sm: 1rem;
-	--padding-xs: 0.5rem;
-	--padding-xxs: 0.25rem;
+  --padding-xl: 2.5rem;
+  --padding-lg: 2rem;
+  --padding-md: 1.5rem;
+  --padding-sm: 1rem;
+  --padding-xs: 0.5rem;
+  --padding-xxs: 0.25rem;
 
-	--font-size-h1: 6rem;
-	--font-size-h2: 3.75rem;
-	--font-size-h3: 3rem;
-	--font-size-h4: 2.125rem;
-	--font-size-h5: 1.5rem;
-	--font-size-h6: 1.25rem;
-	--font-size-subtitle: 1rem;
-	--font-size-body: 1rem;
-	--font-size-button-text: 0.875rem;
-	--font-caption-text: 0.75rem;
-	--font-description-text: 0.75rem;
-	--font-overline-text: 0.75rem;
+  --font-size-h1: 6rem;
+  --font-size-h2: 3.75rem;
+  --font-size-h3: 3rem;
+  --font-size-h4: 2.125rem;
+  --font-size-h5: 1.5rem;
+  --font-size-h6: 1.25rem;
+  --font-size-subtitle: 1rem;
+  --font-size-body: 1rem;
+  --font-size-button-text: 0.875rem;
+  --font-caption-text: 0.75rem;
+  --font-description-text: 0.75rem;
+  --font-overline-text: 0.75rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 html {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100%;
 }
 
 /* MOBILE | FOLDABLE | LANDSCAPE */
 @media only screen and (min-height: 250px) and (orientation: landscape) {
-	html {
-		font-size: 50%;
-	}
+  html {
+    font-size: 50%;
+  }
 }
 
 /* MOBILE | SLIM | LANDSCAPE */
 @media only screen and (min-height: 300px) and (orientation: landscape) {
-	html {
-		font-size: 55%;
-	}
+  html {
+    font-size: 55%;
+  }
 }
 
 /* MOBILE | NORMAL | LANDSCAPE  */
 @media only screen and (min-height: 350px) and (orientation: landscape) {
-	html {
-		font-size: 60%;
-	}
+  html {
+    font-size: 60%;
+  }
 }
 
 /* MOBILE | LARGE | LANDSCAPE */
 @media only screen and (min-height: 400px) and (orientation: landscape) {
-	html {
-		font-size: 65%;
-	}
+  html {
+    font-size: 65%;
+  }
 }
 
 /* LEGACY MOBILE (iPhone 5 and older) | PORTRAIT */
 @media only screen and (min-width: 200px) and (orientation: portrait) {
-	html {
-		font-size: 50%;
-	}
+  html {
+    font-size: 50%;
+  }
 }
 
 @media only screen and (min-width: 260px) and (orientation: portrait) {
-	html {
-		font-size: 65%;
-	}
+  html {
+    font-size: 65%;
+  }
 }
 
 /* MOBILE | PORTRAIT */
 @media only screen and (min-width: 321px) and (orientation: portrait) {
-	html {
-		font-size: 80%;
-	}
+  html {
+    font-size: 80%;
+  }
 }
 
 /* TABLET */
 @media only screen and (min-width: 500px) and (min-height: 700px) {
-	html {
-		font-size: 100%;
-	}
+  html {
+    font-size: 100%;
+  }
 }
 
 /* LAPTOP */
 @media only screen and (min-width: 1280px) and (min-height: 1680px) {
-	html {
-		font-size: 110%;
-	}
+  html {
+    font-size: 110%;
+  }
 }
 
 /* DESKTOP & INFO SCREENS */
 @media only screen and (min-width: 1680px) and (min-height: 1680px) {
-	html {
-		font-size: 120%;
-	}
+  html {
+    font-size: 120%;
+  }
 }
 
 /*CSS RESETS*/
@@ -169,7 +169,7 @@ input,
 button,
 textarea,
 select {
-	font: inherit;
+  font: inherit;
 }
 
 /* Remove default margin */
@@ -183,12 +183,12 @@ figure,
 blockquote,
 dl,
 dd {
-	margin: 0;
+  margin: 0;
 }
 
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }

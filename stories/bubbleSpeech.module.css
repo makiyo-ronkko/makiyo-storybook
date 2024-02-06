@@ -1,186 +1,186 @@
 .bubbleSpeech {
-	position: relative;
-	transform: translatey(0px);
-	animation: float 5s ease-in-out 5;
-	mix-blend-mode: multiply;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 2px;
-	font-size: 1.2rem;
-	padding: 2rem;
-	border-radius: 1rem;
+  position: relative;
+  transform: translatey(0px);
+  animation: float 5s ease-in-out 5;
+  mix-blend-mode: multiply;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .bubbleSpeech::after {
-	transform: translatey(0px);
-	animation: float2 5s ease-in-out 5;
-	content: '.';
-	font-weight: bold;
-	text-shadow: 1rem 1rem var(--color-primary);
-	text-align: right;
-	font-size: 3rem;
-	width: 2rem;
-	height: 1rem;
-	line-height: 2rem;
-	border-radius: 0.9rem;
-	position: absolute;
-	bottom: -30px;
-	right: 0;
-	z-index: -2;
+  transform: translatey(0px);
+  animation: float2 5s ease-in-out 5;
+  content: '.';
+  font-weight: bold;
+  text-shadow: 1rem 1rem var(--color-primary);
+  text-align: right;
+  font-size: 3rem;
+  width: 2rem;
+  height: 1rem;
+  line-height: 2rem;
+  border-radius: 0.9rem;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  z-index: -2;
 }
 
 @keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-0.8rem);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-0.8rem);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 @keyframes float2 {
-	0% {
-		line-height: 2rem;
-		transform: translatey(0px);
-	}
-	55% {
-		transform: translatey(-1rem);
-	}
-	60% {
-		line-height: 1rem;
-	}
-	100% {
-		line-height: 2rem;
-		transform: translatey(0px);
-	}
+  0% {
+    line-height: 2rem;
+    transform: translatey(0px);
+  }
+  55% {
+    transform: translatey(-1rem);
+  }
+  60% {
+    line-height: 1rem;
+  }
+  100% {
+    line-height: 2rem;
+    transform: translatey(0px);
+  }
 }
 
 .text-text-white {
-	color: var(--color-text-white);
+  color: var(--color-text-white);
 }
 
 .text-text-dark {
-	color: var(--color-text-dark);
+  color: var(--color-text-dark);
 }
 
 .primary {
-	background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .primary::after {
-	background-color: var(--color-primary);
-	-webkit-text-fill-color: var(--color-primary);
+  background-color: var(--color-primary);
+  -webkit-text-fill-color: var(--color-primary);
 }
 
 .shadow-primary {
-	box-shadow: 2rem 0.8rem var(--color-primary);
+  box-shadow: 2rem 0.8rem var(--color-primary);
 }
 
 .shadow-primary::after {
-	box-shadow: 1rem 1rem var(--color-primary);
+  box-shadow: 1rem 1rem var(--color-primary);
 }
 
 .nude {
-	background-color: var(--color-nude);
+  background-color: var(--color-nude);
 }
 
 .nude::after {
-	background-color: var(--color-nude);
-	-webkit-text-fill-color: var(--color-nude);
+  background-color: var(--color-nude);
+  -webkit-text-fill-color: var(--color-nude);
 }
 
 .shadow-nude {
-	box-shadow: 2rem 0.8rem var(--color-nude);
+  box-shadow: 2rem 0.8rem var(--color-nude);
 }
 
 .shadow-nude::after {
-	box-shadow: 1rem 1rem var(--color-nude);
+  box-shadow: 1rem 1rem var(--color-nude);
 }
 
 .secondary {
-	background-color: var(--color-secondary);
+  background-color: var(--color-secondary);
 }
 
 .secondary::after {
-	background-color: var(--color-secondary);
-	-webkit-text-fill-color: var(--color-secondary);
+  background-color: var(--color-secondary);
+  -webkit-text-fill-color: var(--color-secondary);
 }
 
 .shadow-secondary {
-	box-shadow: 2rem 0.8rem var(--color-secondary);
+  box-shadow: 2rem 0.8rem var(--color-secondary);
 }
 
 .shadow-secondary::after {
-	box-shadow: 1rem 1rem var(--color-secondary);
+  box-shadow: 1rem 1rem var(--color-secondary);
 }
 
 .tomato {
-	background-color: var(--color-tomato);
+  background-color: var(--color-tomato);
 }
 
 .tomato::after {
-	background-color: var(--color-tomato);
-	-webkit-text-fill-color: var(--color-tomato);
+  background-color: var(--color-tomato);
+  -webkit-text-fill-color: var(--color-tomato);
 }
 
 .shadow-tomato {
-	box-shadow: 2rem 0.8rem var(--color-tomato);
+  box-shadow: 2rem 0.8rem var(--color-tomato);
 }
 
 .shadow-tomato::after {
-	box-shadow: 1rem 1rem var(--color-tomato);
+  box-shadow: 1rem 1rem var(--color-tomato);
 }
 
 .forest {
-	background-color: var(--color-forest);
+  background-color: var(--color-forest);
 }
 
 .forest::after {
-	background-color: var(--color-forest);
-	-webkit-text-fill-color: var(--color-forest);
+  background-color: var(--color-forest);
+  -webkit-text-fill-color: var(--color-forest);
 }
 
 .shadow-forest {
-	box-shadow: 2rem 0.8rem var(--color-forest);
+  box-shadow: 2rem 0.8rem var(--color-forest);
 }
 
 .shadow-forest::after {
-	box-shadow: 1rem 1rem var(--color-forest);
+  box-shadow: 1rem 1rem var(--color-forest);
 }
 
 .cloud {
-	background-color: var(--color-cloud);
+  background-color: var(--color-cloud);
 }
 
 .cloud::after {
-	background-color: var(--color-cloud);
-	-webkit-text-fill-color: var(--color-cloud);
+  background-color: var(--color-cloud);
+  -webkit-text-fill-color: var(--color-cloud);
 }
 
 .shadow-cloud {
-	box-shadow: 2rem 0.8rem var(--color-cloud);
+  box-shadow: 2rem 0.8rem var(--color-cloud);
 }
 
 .shadow-cloud::after {
-	box-shadow: 1rem 1rem var(--color-cloud);
+  box-shadow: 1rem 1rem var(--color-cloud);
 }
 
 .default {
-	background-color: var(--color-default);
+  background-color: var(--color-default);
 }
 
 .default::after {
-	background-color: var(--color-default);
-	-webkit-text-fill-color: var(--color-default);
+  background-color: var(--color-default);
+  -webkit-text-fill-color: var(--color-default);
 }
 
 .shadow-default {
-	box-shadow: 2rem 0.8rem var(--color-default);
+  box-shadow: 2rem 0.8rem var(--color-default);
 }
 
 .shadow-default::after {
-	box-shadow: 1rem 1rem var(--color-default);
+  box-shadow: 1rem 1rem var(--color-default);
 }
