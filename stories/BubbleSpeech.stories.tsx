@@ -1,6 +1,5 @@
-import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
-import { BubbleSpeech, BubbleSpeechProps } from './BubbleSpeech';
+import type { Meta, StoryObj } from '@storybook/nextjs';
+import { BubbleSpeech } from './BubbleSpeech';
 
 const meta = {
   title: 'Example/BubbleSpeech',
@@ -27,7 +26,7 @@ const meta = {
       ],
       control: { type: 'radio' },
     },
-    shadow: {
+    shadowColor: {
       options: [
         'primary',
         'primary-dark',
@@ -47,31 +46,34 @@ const meta = {
       control: { type: 'radio' },
     },
   },
-} as Meta<typeof BubbleSpeech>;
+} satisfies Meta<typeof BubbleSpeech>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = (args: React.JSX.IntrinsicAttributes & BubbleSpeechProps) => <BubbleSpeech {...args} />;
-
-Default.args = {};
-
-export const WithText: Story = (args: React.JSX.IntrinsicAttributes & BubbleSpeechProps) => (
-  <BubbleSpeech {...args}>Hello!</BubbleSpeech>
-);
-
-WithText.args = {
-  backgroundColor: 'nude',
-  shadowColor: 'primary',
-  color: 'text-dark',
+export const Default: Story = {
+  render: (args) => <BubbleSpeech {...args}></BubbleSpeech>,
+  args: {
+    children: 'こんにちは!',
+  },
 };
 
-export const LongText: Story = (args: React.JSX.IntrinsicAttributes & BubbleSpeechProps) => (
-  <BubbleSpeech {...args}>Hello! Moi! こんにちは！</BubbleSpeech>
-);
+export const WithText: Story = {
+  render: (args) => <BubbleSpeech {...args}>Hello!</BubbleSpeech>,
+  args: {
+    children: 'Hello!',
+    backgroundColor: 'nude',
+    shadowColor: 'primary',
+    color: 'text-dark',
+  },
+};
 
-LongText.args = {
-  backgroundColor: 'cloud',
-  shadowColor: 'forest',
-  color: 'text-white',
+export const LongText: Story = {
+  render: (args) => <BubbleSpeech {...args}>Hello! Moi! こんにちは！</BubbleSpeech>,
+  args: {
+    children: 'Hello! Moi! こんにちは！',
+    backgroundColor: 'cloud',
+    shadowColor: 'forest',
+    color: 'text-white',
+  },
 };

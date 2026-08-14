@@ -1,8 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-
-import { Button, ButtonProps } from './Button';
-import { JSX } from 'react';
-import { StyleWrapperProps } from './hoc/StyleWrapper';
+import type { Meta, StoryObj } from '@storybook/nextjs';
+import { Button } from './Button';
 
 const meta = {
   title: 'Example/Button',
@@ -14,7 +11,7 @@ const meta = {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-} as Meta<typeof Button>;
+} satisfies Meta<typeof Button>;
 
 export default meta;
 
@@ -22,57 +19,66 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
+    className: '',
     backgroundColor: 'primary',
     width: 'xl',
     children: 'Submit',
   },
 };
 
-export const WithShadow: Story = (args: JSX.IntrinsicAttributes & ButtonProps & StyleWrapperProps) => (
-  <Button {...args}>Click me!</Button>
-);
-
-WithShadow.args = {
-  backgroundColor: 'tomato',
-  width: 'lg',
-  isShadow: true,
-  children: 'Click me!',
+export const WithShadow: Story = {
+  render: (args) => <Button {...args}>Click me!</Button>,
+  args: {
+    className: '',
+    backgroundColor: 'tomato',
+    width: 'lg',
+    isShadow: true,
+    children: 'Click me!',
+  },
 };
 
-export const Outlined: Story = (args: JSX.IntrinsicAttributes & ButtonProps & StyleWrapperProps) => (
-  <Button {...args}>Outlined</Button>
-);
-
-Outlined.args = {
-  backgroundColor: 'transparent',
-  width: 'lg',
-  outlined: true,
-  outlineColor: 'forest',
+export const Outlined: Story = {
+  render: (args) => <Button {...args}>Outlined</Button>,
+  args: {
+    className: '',
+    backgroundColor: 'transparent',
+    width: 'lg',
+    outlined: true,
+    outlineColor: 'forest',
+    children: 'Outlined',
+  },
 };
 
-export const Loading: Story = (args: JSX.IntrinsicAttributes & ButtonProps & StyleWrapperProps) => <Button {...args} />;
-
-Loading.args = {
-  backgroundColor: 'secondary-dark',
-  width: 'md',
-  height: 'xxxs',
-  isShadow: true,
-  shadowColor: 'shadow',
-  isLoading: true,
+export const Loading: Story = {
+  render: (args) => <Button {...args} />,
+  args: {
+    className: '',
+    backgroundColor: 'secondary-dark',
+    width: 'md',
+    height: 'xxxs',
+    isShadow: true,
+    shadowColor: 'shadow',
+    isLoading: true,
+    children: 'Loading',
+  },
 };
 
-export const Large: Story = (args: JSX.IntrinsicAttributes & ButtonProps & StyleWrapperProps) => <Button {...args} />;
-
-Large.args = {
-  backgroundColor: 'cloud',
-  width: 'lg',
-  children: 'Large',
+export const Large: Story = {
+  render: (args) => <Button {...args} />,
+  args: {
+    className: '',
+    backgroundColor: 'cloud',
+    width: 'lg',
+    children: 'Large',
+  },
 };
 
-export const Small: Story = (args: JSX.IntrinsicAttributes & ButtonProps & StyleWrapperProps) => <Button {...args} />;
-
-Small.args = {
-  width: 'sm',
-  children: 'Small',
-  backgroundColor: 'nude',
+export const Small: Story = {
+  render: (args) => <Button {...args} />,
+  args: {
+    className: '',
+    width: 'sm',
+    children: 'Small',
+    backgroundColor: 'nude',
+  },
 };
