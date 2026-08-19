@@ -17,9 +17,9 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@storybook/addon-links": "^10.5.7",
-    "@storybook/nextjs": "^10.5.7",
-    "@storybook/react": "^10.5.7",
+    "@storybook/addon-links": "^10.5.9",
+    "@storybook/nextjs": "^10.5.9",
+    "@storybook/react": "^10.5.9",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -29,7 +29,7 @@
     "eslint-plugin-storybook": "^10.5.7",
     "postcss": "^8",
     "prettier": "3.2.5",
-    "storybook": "^10.5.7",
+    "storybook": "^10.5.9",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
